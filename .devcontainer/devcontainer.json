@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.154.2/containers/python-3
+{
+    "name": "paylead-challenge",
+    "build": {
+    "dockerfile": "dev.dockerfile",
+
+    // Set *default* container specific settings.json values on container create.
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.linting.enabled": true,
+        "python.linting.lintOnSave": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.pylamaEnabled": true,
+        "python.linting.banditEnabled": true,
+        "python.formatting.provider": "black",
+        "[python]": {
+        "editor.formatOnSave": true
+        },
+    },
+
+// Add the IDs of extensions you want installed when the container is created.
+"extensions": [
+    "ms-python.python",
+    "bungcip.better-toml"
+    ],
+}
